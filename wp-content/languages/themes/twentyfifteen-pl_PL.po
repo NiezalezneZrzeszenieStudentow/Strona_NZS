@@ -220,7 +220,7 @@ msgstr "Menu główne"
 msgid "Proudly powered by %s"
 msgstr "Dumnie wspierane przez WordPressa"
 
-#. #-#-#-#-#  twentyfifteen.pot (Twenty Fifteen 1.8)  #-#-#-#-#
+#. #-#-#-#-#  twentyfifteen.pot (Twenty Fifteen 1.9)  #-#-#-#-#
 #. Author URI of the plugin/theme
 #: footer.php:25
 msgid "https://wordpress.org/"
@@ -256,17 +256,9 @@ msgstr "Strony:"
 msgid "Continue reading %s"
 msgstr "Czytaj dalej %s"
 
-#: comments.php:53
+#: comments.php:69
 msgid "Comments are closed."
 msgstr "Możliwość komentowania jest wyłączona."
-
-#: comments.php:28
-msgctxt "comments title"
-msgid "One thought on &ldquo;%2$s&rdquo;"
-msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
-msgstr[0] "Jedno przemyślenie nt. &bdquo;%2$s&rdquo;"
-msgstr[1] "%1$s przemyślenia nt. &bdquo;%2$s&rdquo;"
-msgstr[2] "%1$s przemyśleń nt. &bdquo;%2$s&rdquo;"
 
 #: author-bio.php:34
 msgid "View all posts by %s"

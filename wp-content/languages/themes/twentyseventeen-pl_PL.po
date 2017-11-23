@@ -39,11 +39,11 @@ msgctxt "Theme starter content"
 msgid "Espresso"
 msgstr "Espresso"
 
-#: inc/custom-header.php:119
+#: inc/custom-header.php:120
 msgid "Pause background video"
 msgstr "Zatrzymaj film tworzący tło"
 
-#: inc/custom-header.php:118
+#: inc/custom-header.php:119
 msgid "Play background video"
 msgstr "Odtwarzaj film tworzący tło"
 
@@ -209,7 +209,7 @@ msgstr "Wyniki wyszukiwania dla zapytania &#8222;%s&#8221;"
 
 #. translators: %s: Name of current post
 #: functions.php:363 template-parts/page/content-front-page-panels.php:43
-#: template-parts/page/content-front-page.php:44
+#: template-parts/page/content-front-page.php:40
 #: template-parts/post/content-audio.php:83
 #: template-parts/post/content-gallery.php:70
 #: template-parts/post/content-image.php:59
@@ -262,7 +262,7 @@ msgstr "Menu odnośników serwisów społecznościowych"
 msgid "Proudly powered by %s"
 msgstr "Dumnie wspierane przez WordPressa"
 
-#. #-#-#-#-#  twentyseventeen.pot (Twenty Seventeen 1.3)  #-#-#-#-#
+#. #-#-#-#-#  twentyseventeen.pot (Twenty Seventeen 1.4)  #-#-#-#-#
 #. Author URI of the plugin/theme
 #: template-parts/footer/site-info.php:13
 msgid "https://wordpress.org/"
