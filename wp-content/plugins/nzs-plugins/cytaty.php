@@ -3,7 +3,7 @@
 /*
  *Plugin Name: NZS Cytaty
  *Plugin URI:http://www.nzs.put.poznan.pl
- *Description: Losowe cytaty.
+ *Description: Wtyczka wyświetlająca losowe cytaty.
  *Version: 1.0
  *Author: Karol Znojkiewicz
  *Author URI: http://www.karolznojkiewicz.pl
