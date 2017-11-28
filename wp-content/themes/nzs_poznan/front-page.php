@@ -52,6 +52,8 @@
     	<?php
             if(@function_exists(edu_cytaty_random_quote))
                 edu_cytaty_random_quote();
+            else
+                echo "To, że milczę, nie znaczy, że nie mam nic do powiedzenia";
         ?>
     </blockquote>
 </div>
