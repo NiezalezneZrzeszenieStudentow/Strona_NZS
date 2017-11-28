@@ -49,7 +49,7 @@
 
 <div class="blockquote">
 	<blockquote>
-    	<?php edu_cytaty_random_quote(); ?>
+    	<?php //edu_cytaty_random_quote(); ?>
     </blockquote>
 </div>
 <div class="gradient">
