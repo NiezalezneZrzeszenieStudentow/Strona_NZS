@@ -1551,3 +1551,162 @@ a{
 .box-wrapper-blog {
     padding-left: 25px;
 }
+
+/*regulamin*/
+hr.style1 
+{ 
+  height: 30px; 
+  border-style: solid; 
+  border-color: #8c8b8b; 
+  border-width: 1px 0 0 0; 
+  border-radius: 20px;
+  background-color: transparent;
+
+} 
+hr.style1:before 
+{ 
+  display: block; 
+  content: ""; 
+  height: 30px; 
+  margin-top: -31px;
+  border-style: solid; 
+  border-color: #8c8b8b; 
+  border-width: 0 0 1px 0; 
+  border-radius: 20px;
+ 
+  
+}
+
+
+.nzs-regulamin-data
+{
+	float:right;
+}
+
+.nzs-regulamin-chapter
+{
+	text-align:center;
+	font-weight:bold;
+	font-size:30px;
+	font-family: 'Kaushan Script';
+
+}
+
+.nzs-regulamin-provisions
+{
+	text-align:center;
+	font-style:italic;
+	font-size:30px;
+}
+
+.nzs-regulamin-paragraph
+{	
+	text-align:center;
+	color:#FF0000;
+	font-size:20px;
+	font-weight:bold;
+	font-style:italic;
+}
+
+.nzs-regulamin-underparagraph
+{
+	text-align:center;
+	font-weight:bold;
+	font-style:italic;
+}
+
+
+.nzs-regulamin ul 
+{
+	
+    counter-reset: list;
+    margin: 0;
+}
+
+.nzs-regulamin ul > li 
+{
+    list-style: none;
+    position: relative;
+}
+
+.nzs-regulamin ul > li:before 
+{
+    counter-increment: list;
+    content: counter(list, lower-alpha) ") ";
+    position: absolute;
+    left: -1.4em;
+}
+
+.content-declaration-info
+{
+	text-align:left;
+}
+
+.content-declaration-text > p
+{
+	text-align:justify;
+}
+/*nzs cup*/
+.nzs-cup-header
+{
+	text-align:left;
+	color:#30F;
+	font-weight:bold;
+	padding:20px 0px 20px 0px;
+}
+
+.nzs-cup p:last-of-type
+{
+	color:#F00;
+	font-weight:bolder;
+}
+
+.nzs-cup p:first-of-type
+{
+	font-style:italic;
+	font-weight:bold;
+}
+
+.nzs-cup p
+{
+	padding-left:20px;
+}
+
+/*faq*/
+.faq-sidebar {
+  position: fixed;
+  top: 51px;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 20px 0;
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+  border-right: 1px solid #eee;
+}
+
+.faq sidebar .faq nav {
+  margin-bottom: 20px;
+}
+
+.faq sidebar .faq nav-item {
+  width: 100%;
+}
+
+.faq sidebar .faq nav-item + .faq nav-item {
+  margin-left: 0;
+}
+
+.faq sidebar .faq nav-link {
+  border-radius: 0;
+}
+
+.placeholders {
+  padding-bottom: 3rem;
+}
+
+.placeholder img {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
