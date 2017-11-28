@@ -1,4 +1,4 @@
-﻿<?php get_header(); ?>
+<?php get_header(); ?>
      
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
@@ -49,7 +49,10 @@
 
 <div class="blockquote">
 	<blockquote>
-    	<?php //edu_cytaty_random_quote(); ?>
+    	<?php
+            if(@function_exists(edu_cytaty_random_quote))
+                edu_cytaty_random_quote();
+        ?>
     </blockquote>
 </div>
 <div class="gradient">
@@ -307,4 +310,4 @@ Na Twitterze</li>
 
   
 
-<?php get_footer(); ?>
+<?php get_footer(); ?>   
