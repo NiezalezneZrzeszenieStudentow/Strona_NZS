@@ -198,7 +198,7 @@
     	<h5>Nie czekaj, bądź jednym z nas</h5>
         <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>	
     	
-        <a href="<?php $_SERVER[''] ?>"><button type="button" class="btn btn-primary btn-lg">Dołącz do nas</button></a>
+        <a href=""><button type="button" class="btn btn-primary btn-lg">Dołącz do nas</button></a>
 </section> 
 
 
@@ -312,4 +312,4 @@ Na Twitterze</li>
 
   
 
-<?php get_footer(); ?>   
+<?php get_footer(); ?>
