@@ -1444,19 +1444,26 @@ article.entry{
 .box-regulamin-inner3{
 	background-color:#366;	
 }
+.box-regulamin-inner4{
+	background-color:#056;	
+}
 .text-color{
 	text-align:center;
 	color:#fff;	
 	text-transform:uppercase;
+	padding-bottom:20px;
 }
 .text-color:hover{
 	transition:all 0.4s ease;
 	transform:scale(1.1);
 	webkit-filter: grayscale(0);
 	z-index:1 !important;
+	cursor:pointer;
 }
 .text-color i{
 	font-size:8em;
+	display:block;
+	padding:20px;
 }
 a{
 	display: contents;
