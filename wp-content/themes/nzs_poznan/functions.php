@@ -1,13 +1,4 @@
-
 <?php
-
-//function nzs(){
-//function slider(){
- 
-//function czlonkowie(){
-//function projekty(){
-
-
 if(!defined('fantazyjaPoznanska_THEME_DIR')){
 	define('fantazyjaPoznanska_THEME_DIR',get_theme_root(). '/'. get_template(), '/');	
 }
