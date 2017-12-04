@@ -135,7 +135,7 @@ add_filter( 'the_title', 'trim'          );
 
 add_filter( 'the_content', 'wptexturize'                       );
 add_filter( 'the_content', 'convert_smilies',               20 );
-//add_filter( 'the_content', 'wpautop'                           );
+add_filter( 'the_content', 'wpautop'                           );
 add_filter( 'the_content', 'shortcode_unautop'                 );
 add_filter( 'the_content', 'prepend_attachment'                );
 add_filter( 'the_content', 'wp_make_content_images_responsive' );
