@@ -100,8 +100,11 @@ if ( ! function_exists( 'nzs_poznan_setup' ) ) :
 	}
 endif;
 add_action( 'after_setup_theme', 'nzs_poznan_setup' );
-
-
+/*asynchronichne uruchamianie plików*/
+function nzs_defer() {
+	return 'async ';
+}
+add_filter('autoptimize_filter_js_defer', 'wpzen_defer');
 //Making jQuery to load from Google Library
 function replace_jquery() {
 	if (!is_admin()) {
