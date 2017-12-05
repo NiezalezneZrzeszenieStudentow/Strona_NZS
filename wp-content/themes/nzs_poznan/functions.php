@@ -113,6 +113,10 @@ function replace_jquery() {
 		wp_register_script('jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js', false, '1.11.3');
 		wp_enqueue_script('jquery');
 		wp_enqueue_script( 'jqueryslim', get_stylesheet_directory_uri().'/js/jquery-slim.min.js', false, '1.1');
+		
+		wp_enqueue_script('jquery');
+		wp_enqueue_script( 'scripts', get_stylesheet_directory_uri().'/js/scripts.js', false, '1.1');
+		
 		wp_enqueue_script( 'popper', get_stylesheet_directory_uri().'/bootstrap/assets/js/vendor/popper.min.js', false, '1.1');
   wp_enqueue_script( 'bootstrapjs', get_stylesheet_directory_uri().'/bootstrap/dist/js/bootstrap.min.js', false, '1.2');
   wp_enqueue_script( 'viewport', get_stylesheet_directory_uri().'/bootstrap/assets/js/ie10-viewport-bug-workaround.js', false, '1.3');
@@ -363,6 +367,7 @@ add_action( 'widgets_init', 'najnowsze_posty_init' );
 
 
 
+
 /*wp-login modyfication*/
 function new_login(){
 	echo '<link rel="stylesheet" type="text/css" href="' . get_option('siteurl') .'/wp-content/themes/'. get_option('template') .'/css/login.css" />'."\n";
@@ -399,7 +404,34 @@ function nzs_poznan_widgets_init() {
 }
 add_action( 'widgets_init', 'nzs_poznan_widgets_init' );
 
+function nzs_admin_init(){
+	register_setting('nzs_theme_options','nzs_gmap_api_key');
+}
+add_action('admin_init','nzs_admin_init');
 
+function nzs_settings_page(){
+	?>	
+		<div class="wrap">
+        	
+            <h2>Ustawienia szablonu NZS</h2>
+            
+            <form action="options.php" method="post" id="nzs-options-form">
+            	<?php settings_fields('nzs_theme_options'); ?>
+                <h3>
+                	<label for="nzs_gmap_api_key">Klucz Google Maps</label>
+                    <input name="nzs_gmap_api_key" id="nzs_gmap_api_key" type="text" style="width:500px" value="<?php echo esc_attr(get_option('nzs_gmap_api_key')); ?>">
+                </h3>
+                <input class="btn btn-primary" type="submit" value="zapisz">
+            </form>
+        </div>
+	<?php
+}
+
+function nzs_setting_menu(){
+	add_theme_page('NZS PP - Ustawienia', 'Ustawienia NZS PP', 'manage_options', 'nzs-theme-options', 'nzs_settings_page');
+}
+
+add_action('admin_menu', 'nzs_setting_menu');
 
 
 /**

@@ -47,6 +47,12 @@
 <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto:400,700&amp;subset=latin-ext" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&amp;subset=latin-ext" rel="stylesheet">
 
+<script src="https://maps.googleapis.com/maps/api/js?key=<?php echo esc_attr(get_option('nzs_gmap_api_key')); ?>&amp;sensor=true"></script>
+
+
+
+
+
 <?php if(is_search()):?>
 <meta name="robots" content="noindex, nofollow" />
 <?php endif; ?>
