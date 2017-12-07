@@ -29,8 +29,68 @@
 
 			//rejestracja przycisku w menu
 			add_action('admin_menu', array($this,'createAdminMenu'));
-		}
+			//rejestracja skryptów panelu admina
 
+			 //rejestracja skryptów panelu admina
+              add_action('admin_enqueue_scripts', array($this, 'addAdminPageScripts'));
+             
+             
+             //rejestracja akcji AJAX
+             add_action('wp_ajax_checkValidPosition', array($this, 'checkValidPosition'));
+             add_action('wp_ajax_getLastFreePosition', array($this, 'getLastFreePosition'));
+         }
+         
+         
+         function addAdminPageScripts(){
+             
+             wp_register_script(
+                     'nzs-hs-script', 
+                     plugins_url('/js/scripts.js', __FILE__), 
+                     array('jquery', 'media-upload', 'thickbox')
+                );
+             
+             if(get_current_screen()->id == 'toplevel_page_'.static::$plugin_id){
+                 
+                 wp_enqueue_script('jquery');
+                 
+                 wp_enqueue_script('thickbox');
+                 wp_enqueue_style('thickbox');
+                 
+                 wp_enqueue_script('media-upload');
+                 
+                 wp_enqueue_script('nzs-hs-script');
+                 
+             }
+             
+         }
+
+         
+         function checkValidPosition(){
+             
+             $position = isset($_POST['position']) ? (int)$_POST['position']: 0;
+             
+             $message = '';
+             
+             if($position < 1){
+                 $message = 'Podana wartość jest niepoprawna. Pozycja musi być liczbą większą od 0.';
+                 
+             }else
+             if(!$this->model->isEmptyPosition($position)){
+                 $message = 'Dana pozycja jest już zajęta';
+                 
+             }else{
+                 $message = 'Ta pozycja jest wolna';
+                 
+             }
+             
+             echo $message;
+             die;
+         }
+
+         function getLastFreePosition(){
+         	echo $this->model->getLastFreePosition();
+         	die;
+         }
 		function onActivate(){
 			//funkcja odpowiada za proces instalacji pluginu wraz z bazą
 			$ver_opt = static::$plugin_id.'-version';
