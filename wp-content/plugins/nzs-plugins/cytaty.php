@@ -22,6 +22,7 @@
  }
  function edu_cytaty_random_quote(){
 		$quote = '"'.edu_cytaty_get_random_quote().'"';
+		_log($quote);
 		echo '<p>'.$quote.'</p>'; 
  }
 ?>

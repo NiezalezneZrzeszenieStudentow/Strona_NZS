@@ -1717,3 +1717,10 @@ hr.style1:before
   padding-bottom: 1.5rem;
 }
 
+
+
+
+header nav ul.dropdown-menu li.menu-item-4713 a{
+	background-image: url(../_img/menu/submenu-icon-bread.png);
+}
+

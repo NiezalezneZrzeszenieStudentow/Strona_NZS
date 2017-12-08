@@ -1,16 +1,24 @@
 <?php
 
-/*
- *Plugin Name: NZS Debugger
- *Plugin URI:http://www.nzs.put.poznan.pl
- *Description: Debugger zapisujący dump SQL do pliku sql_dump.log.
- *Version: 1.0
- *Author: Karol Znojkiewicz
- *Author URI: http://www.karolznojkiewicz.pl
- *License: GPL2
- */
+ function _log($message){
+
+	if(define('WP_DEBUG') && WP_DEBUG){
+		$file_path = __DIR__.DIRECTORY_SEPARATOR.'app_dev.log';
+		$time = date('Y-m-d H:i:s');
+		if(is_array($message) || is_object($message)){
+			$message = print_r($message, TRUE);	
+		}
+		$log_line = "$time\t{$message}\n";
+		
+		if(!file_put_contents($file_path, $log_line, FILE_APPEND)){
+				throw new Exception("Plik dziennika '{$file_path}' nie może zostać otwarty ani utworzony");
+		}
+	}
+ }
  
  function my_query_logger(){
+	 
+	 if((define('WP_DEBUG') && WP_DEBUG) && (define('SAVEQUERIES') && SAVEQUERIES)){
 		global $wpdb;
 		$dump = array();
 		if(!empty($wpdb->queries)){
@@ -36,6 +44,7 @@
 		if(!file_put_contents($file_path, $content, FILE_APPEND)){
 			throw new Exception("Plik dziennika'{$file_path}'nie może zostać otwarty plik");
 		};
+ 	}
  }
  add_action('shutdown', 'my_query_logger');
 ?>
