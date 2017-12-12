@@ -943,18 +943,16 @@ blockquote p{
 .background-header{
 	background-color:#1CA5B8;	
 }
-.navbar{
+.navbar {
 	background:#fff;
 	padding:0;
 	z-index: 2000000;
 	box-shadow: 0 4px 4px 0 rgba(0,0,0,.5);	
-	height:70px;
-}
-.navbar h1{
-	margin:0;	
+	
+
 }
 .navbar-nav li a{
-	color:#fff;
+	color:#000000;
 	font-family: 'Lato';
 	font-weight: bold;	
 	text-decoration: none;
@@ -966,9 +964,7 @@ blockquote p{
 	background: #005675;
 	transform: rotate(-10deg);	
 }
-.navbar-nav .dropdown-menu{
-	background: #0A9FE0;	
-}
+
 .dropdown-menu li{
 	padding:5px;	
 }
@@ -988,7 +984,7 @@ blockquote p{
 	border-radius: 5px 5px;
 }
 .box-header-add .btn-secondary{
-	border:1px solid #999;
+
 	background-color:transparent;
 	font-weight:bold;
 	color:#999;	
@@ -1015,10 +1011,7 @@ blockquote p{
 .navbar ul li i{
 	color:#999;	
 }
-.navbar-toggler{
-	border: 1px solid #999;
-	margin-left: 1%;	
-}
+
 /*footer*/
 footer{
 	background-color:#005675;
