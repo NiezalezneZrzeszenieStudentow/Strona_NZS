@@ -943,31 +943,6 @@ blockquote p{
 .background-header{
 	background-color:#1CA5B8;	
 }
-.navbar {
-	background:#fff;
-	padding:0;
-	z-index: 2000000;
-	box-shadow: 0 4px 4px 0 rgba(0,0,0,.5);	
-	
-
-}
-.navbar-nav li a{
-	color:#000000;
-	font-family: 'Lato';
-	font-weight: bold;	
-	text-decoration: none;
-}
-.navbar-nav > li{
-	padding:0 10px;	
-}
-.navbar-nav li.active{
-	background: #005675;
-	transform: rotate(-10deg);	
-}
-
-.dropdown-menu li{
-	padding:5px;	
-}
 .box-header-add{
 	padding: 10px;	
 }
@@ -995,13 +970,7 @@ blockquote p{
 .header-avatar {
     display: inline;
 }
-.navbar ul{
-	display:table;
-	border-left: 1px solid #efefef;
-	border-right: 1px solid #efefef;
-	margin: 0;
-	padding: 0 10px;	
-}
+
 .navbar ul li{
 	vertical-align: middle;
 	display: table-cell;

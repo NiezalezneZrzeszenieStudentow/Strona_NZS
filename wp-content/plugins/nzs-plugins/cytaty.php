@@ -21,8 +21,17 @@
 	return $quote[mt_rand(0, count($quote)-1)];
  }
  function edu_cytaty_random_quote(){
-		$quote = '"'.edu_cytaty_get_random_quote().'"';
+		//$quote = '"'.edu_cytaty_get_random_quote().'"';
 		_log($quote);
-		echo '<p>'.$quote.'</p>'; 
- }
+		//echo '<p>'.$quote.'</p>'; 
+		$quote = edu_cytaty_get_random_quote();
+		$quote = applay_filters('edu_cytaty_filter',$quote);
+		
+		echo '<p>'.$quote.'</p>';
+}
+
+function edu_cytaty_def_filter($quote){
+		$quote = '"'.$quote.'"';
+		return wptexturize($quote);
+}
 ?>

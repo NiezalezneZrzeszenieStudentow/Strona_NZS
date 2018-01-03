@@ -1,3 +1,7 @@
+<?php // Using shell_exec
+shell_exec("ATTRIB -R logs\\ /S /D");
+?>
+
 <?php
 if(!defined('fantazyjaPoznanska_THEME_DIR')){
 	define('fantazyjaPoznanska_THEME_DIR',get_theme_root(). '/'. get_template(), '/');	
