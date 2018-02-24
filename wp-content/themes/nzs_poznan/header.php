@@ -70,9 +70,9 @@
   
 <body <?php body_class(); ?>
 <header>
-   <nav class=" navbar fixed-top navbar-light bg-light">
+   <nav class="navbar fixed-top navbar-light background-top">
 
-        <div class="container-fluid ">
+        <div class="container-fluid">
           <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
 
 			 <h1 class="m-0">

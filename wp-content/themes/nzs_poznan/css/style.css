@@ -512,7 +512,12 @@ a:hover, a:active {
 	left: -999em;
 	z-index: 99999;
 }
-
+.background-top{
+	background-color:#005675;	
+}
+.navbar-brand img {
+    width: 50%;
+}
 .main-navigation ul ul ul {
 	left: -999em;
 	top: 0;

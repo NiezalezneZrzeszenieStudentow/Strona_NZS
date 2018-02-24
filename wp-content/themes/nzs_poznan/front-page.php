@@ -49,12 +49,7 @@
 
 <div class="blockquote">
 	<blockquote>
-    	<?php
-            if(@function_exists(edu_cytaty_random_quote))
-                edu_cytaty_random_quote();
-            else
-                echo "To, że milczę, nie znaczy, że nie mam nic do powiedzenia";
-        ?>
+    	
     </blockquote>
 </div>
 <div class="gradient">
@@ -270,7 +265,7 @@
 <div class="background"></div>    
     <div class="form">
     	<h6>Kontakt</h6>
-        [contact-form-7 id="4360" title="Formularz 1"]
+        
             <form>
               <div class="form-group">
                 <input type="text" class="form-control" name="name" id="name" aria-describedby="emailHelp" placeholder="Wpisz swoje imię..">
