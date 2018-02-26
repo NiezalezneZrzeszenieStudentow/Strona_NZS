@@ -64,7 +64,7 @@
                     </div>
                 </div>
                 <div class="email">
-                	<div class="contact-left"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+                	<div class="contact-left"><i class="fas fa-at"></i></div>
                     <div class="contact-right">
                     	<p>E-mail</p>
                         <p>nzs@put.poznan.pl</p>
@@ -73,11 +73,10 @@
                 <div class="connect">
                 	<h5>Dołącz do nas</h5>
                 	<ul>
-                    	<li><a class="facebook circle" href="facebook.pl"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                        <li><a class="twitter circle" href="twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                        <li><a class="instagram circle" href="instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                        <li><a class="youtube circle" href="youtube.pl"><i class="fa fa-youtube" aria-hidden="true"></i>
-</a></li>
+                    	<li><a class="facebook circle" href="facebook.pl"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a class="twitter circle" href="twitter.com"><i class="fab fa-twitter"></i></a></li>
+                        <li><a class="instagram circle" href="instagram.com"><i class="fab fa-instagram"></i></a></li>
+                        <li><a class="youtube circle" href="youtube.pl"><i class="fab fa-youtube"></i></a></li>
                     </ul>
                    </div>
             </div>

@@ -130,6 +130,12 @@ function replace_jquery() {
 add_action('init', 'replace_jquery');
 
 
+function fontawesome() {
+		wp_register_script('fontawesome', 'https://use.fontawesome.com/releases/v5.0.6/js/all.js', false, '5.0.6');
+		wp_enqueue_script('fontawesome');
+}
+add_action('init', 'fontawesome');
+
 // Breadcrumbs
 function custom_breadcrumbs() {
        
@@ -437,6 +443,27 @@ function nzs_setting_menu(){
 
 add_action('admin_menu', 'nzs_setting_menu');
 
+
+/**
+ * Wyświetla obrazek avatara z gravatara
+ *
+ * [wpa_gravatar email="ziemekpr0@gmail.com" size="64"]
+ */
+function wpa_echo_avatar($atts)
+{
+    $params = shortcode_atts( array(
+        'email' => 'ziemekpr0@gmail.com',
+        'size' => 32
+    ), $atts );
+
+    return get_avatar( $params['email'], $params['size'] );
+}
+add_shortcode( 'wpa_echo_avatar', 'wpa_echo_avatar' );
+
+/**
+ * Opcjonalnie, jeżeli zamiast avatara pojawił się shortcode:
+ */
+add_filter( 'widget_text', 'do_shortcode' );
 
 /**
  * Enqueue scripts and styles.

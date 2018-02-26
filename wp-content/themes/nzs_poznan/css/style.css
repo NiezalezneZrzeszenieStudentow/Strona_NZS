@@ -41,9 +41,7 @@ body {
     margin: 0;
     padding: 0;
 }
-body{
-	font-family:'Lato', Aril;	
-}
+
 ul,li{
 	padding:0;
 	margin:0;	
@@ -264,7 +262,7 @@ select,
 optgroup,
 textarea {
 	color: #404040;
-	font-family: sans-serif;
+	font-family:'Lato', Aril;
 	font-size: 1rem;
 	line-height: 1.5;
 }
@@ -868,11 +866,6 @@ object {
     width: 50%; /* 6 columns */
   }
 }
-
-/*logo*/
-h1 img {
-    padding: 10px;
-}
 /*breadcrumbs*/
 #breadcrumbs{
     list-style:none;
@@ -937,6 +930,9 @@ blockquote p{
 	padding: 12px 20px;
 }
 /*header*/
+headar{
+	background-color: #1c2439;	
+}
 .carousel{
 	height: 100vh;	
 }
@@ -944,9 +940,6 @@ blockquote p{
     width: 100% !important;
     height: 100vh;
     background-size: cover;
-}
-.background-header{
-	background-color:#1CA5B8;	
 }
 .box-header-add{
 	padding: 10px;	
@@ -1678,3 +1671,13 @@ header nav ul.dropdown-menu li.menu-item-4713 a{
 	background-image: url(../_img/menu/submenu-icon-bread.png);
 }
 
+.sidebar::before {
+    border-left-style: solid;
+    border-left-width: 1px;
+    content: "";
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 25px;
+	border-color: #828282 !important;
+}

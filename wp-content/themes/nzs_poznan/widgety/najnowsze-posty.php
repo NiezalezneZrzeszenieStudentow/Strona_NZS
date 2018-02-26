@@ -20,7 +20,12 @@ class Najnowsze_Posty extends WP_Widget {
      * @param array $instance
      */
     public function widget( $args, $instance ) {
-        // outputs the content of the widget
+         $title = apply_filters('widget_title', $instance['title']);
+        echo $args['before_widget'];
+        if(!empty($title)) echo $args['before_title'].$title.$args['after_title'];
+        echo '<p>Brawo! Widget działa!</p>';
+        echo $args['after_widget'];
+         
     }
 
     /**
@@ -29,7 +34,9 @@ class Najnowsze_Posty extends WP_Widget {
      * @param array $instance The widget options
      */
     public function form( $instance ) {
-        $instance = wp_parse_args( (array) $instance, array( 'title' => 'Najnowsze Posty' ) );
+       if(isset($instance['title'])) $title = $instance['title'];
+            else $title = 'Mój widget';
+            echo '<p><label for="'.$this->get_field_id('title').'">'.__('Title:').'</label><input class="widefat" id="'.$this->get_field_id('title').'" name="'.$this->get_field_name('title').'" type="text" value="'.esc_attr($title).'" /></p>';
     }
 
     /**
@@ -39,7 +46,9 @@ class Najnowsze_Posty extends WP_Widget {
      * @param array $old_instance The previous options
      */
     public function update( $new_instance, $old_instance ) {
-        return $new_instance;
+        $instance = array();
+        $instance['title'] = (!empty($new_instance['title'])) ? strip_tags($new_instance['title']) : '';
+        return $instance;
     }
 }
 

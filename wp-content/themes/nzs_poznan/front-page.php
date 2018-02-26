@@ -130,9 +130,9 @@
                          <div class="post-body">
                         	<h4>New York</h4>
                             <ul>
-                            	<li><i class="fa fa-calendar" aria-hidden="true"></i>Wrzesień, 2017
+                            	<li><i class="fas fa-calendar-alt"></i>Wrzesień, 2017
 </li>
-                                <li><i class="fa fa-pencil" aria-hidden="true"></i>Karol Znojkiewicz
+                                <li><i class="fas fa-pencil-alt"></i>Karol Znojkiewicz
 </li>
                             </ul>
                         </div>
@@ -147,9 +147,9 @@
                             <div class="post-body">
                         	<h4>New York</h4>
                             <ul>
-                            	<li><i class="fa fa-calendar" aria-hidden="true"></i>Wrzesień, 2017
+                            	<li><i class="fas fa-calendar-alt"></i>Wrzesień, 2017
 </li>
-                                <li><i class="fa fa-pencil" aria-hidden="true"></i>Karol Znojkiewicz
+                                <li><i class="fas fa-pencil-alt"></i>Karol Znojkiewicz
 </li>
                             </ul>
                         </div>
@@ -163,9 +163,9 @@
                             <div class="post-body">
                         	<h4>New York</h4>
                             <ul>
-                            	<li><i class="fa fa-calendar" aria-hidden="true"></i>Wrzesień, 2017
+                            	<li><i class="fas fa-calendar-alt"></i>Wrzesień, 2017
 </li>
-                                <li><i class="fa fa-pencil" aria-hidden="true"></i>Karol Znojkiewicz
+                                <li><i class="fas fa-pencil-alt"></i>Karol Znojkiewicz
 </li>
                             </ul>
                         </div>
@@ -179,8 +179,8 @@
                             <div class="post-body">
                         	<h4>New York</h4>
                             <ul>
-                            	<li><i class="fa fa-calendar" aria-hidden="true"></i>Wrzesień, 2017</li>
-                                <li><i class="fa fa-pencil" aria-hidden="true"></i>Karol Znojkiewicz</li>
+                            	<li><i class="fas fa-calendar-alt"></i>Wrzesień, 2017</li>
+                                <li><i class="fas fa-pencil-alt"></i>Karol Znojkiewicz</li>
                             </ul>
                         </div>
                         </div>
@@ -211,7 +211,7 @@
                         </div>
                         
                         <div class="col-md-2">
-                        	<i class="fa fa-envelope-o" aria-hidden="true"></i>
+                        	<i class="fas fa-at"></i>
                         </div>
                         <div class="col-md-10">
                         	<p>nzs@put.poznan.pl</p>
@@ -293,14 +293,13 @@
         
         
         <ul>
-        	<a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2FNZS.PP%2F&amp;src=sdkpreparse"><li class="button-site facebook" data-href="https://www.facebook.com/NZS.PP/" data-layout="button" data-size="large" data-mobile-iframe="true"><i class="fa fa-facebook" aria-hidden="true"></i>
+        	<a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2FNZS.PP%2F&amp;src=sdkpreparse"><li class="button-site facebook" data-href="https://www.facebook.com/NZS.PP/" data-layout="button" data-size="large" data-mobile-iframe="true"><i class="fab fa-facebook-f"></i>
 Na Facebooku</li></a>
 
            <a href="https://plus.google.com/share?url=https://plus.google.com/u/1/110925620010370327612" onclick="javascript:window.open(this.href,
-  '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes');return false;"><li class="button-site googleplus"><i class="fa fa-google-plus" aria-hidden="true"></i>
+  '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes');return false;"><li class="button-site googleplus"><i class="fab fa-google-plus-g"></i>
 Na Google+</li></a>
-            <li class="button-site twitter"><i class="fa fa-twitter" aria-hidden="true"></i>
-Na Twitterze</li>
+            <li class="button-site twitter"><i class="fab fa-twitter"></i>Na Twitterze</li>
         </ul>
 </div>
 

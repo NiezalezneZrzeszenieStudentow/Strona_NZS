@@ -69,83 +69,29 @@
 </head>
   
 <body <?php body_class(); ?>
-<header>
-   <nav class="navbar fixed-top navbar-light background-top">
 
-        <div class="container-fluid">
-          <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
-
-			 <h1 class="m-0">
-              <a class="navbar-brand img-fluid" href="<?php echo esc_url(home_url('/')); ?>"><img src="<?php echo get_template_directory_uri(); ?>/_img/logo.png">
-              </a>
-          	</h1> 
-          	
-
-        <ul class="ul1 d-none d-md-block">
-            <li>
-                <a href="https://www.facebook.com/NZS.PP/" rel="nofollow">
-                    <i class="fa fa-facebook" aria-hidden="true"></i>
-                </a>
-            </li>
-            <li>
-                <a href="https://twitter.com/nzs_pp?lang=pl" rel="nofollow">
-                    <i class="fa fa-twitter" aria-hidden="true"></i>
-                </a>
-            </li>
-            <li>
-                <a href="https://www.instagram.com/nzs_pp/" rel="nofollow">
-                    <i class="fa fa-instagram" aria-hidden="true"></i>
-                </a>
-            </li>
-        </ul>
-<?php
-  if(is_user_logged_in()){
-?>
-<div class="dropdown">
-<img class="img-fluid d-none d-sm-inline" src="<?php echo get_template_directory_uri(); ?>/_img/osoby/avatar.png">
-           
-            
-          <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Moje konto
-          </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                <a href="<?php echo home_url('/wp-admin/'); ?>">
-                    <button class="dropdown-item" type="button">Edycja profilu</button>
-                </a>
-                    <button class="dropdown-item" type="button">Ustawienia</button>
-                <a href="<?php echo wp_logout_url(); ?>"> 
-                  <button class="dropdown-item" type="button">Wyloguj się</button>
-                </a>
-            </div>
-    </div>
-                
-                
-                
-        <?php
-            }else{
-            echo "<a href=".home_url('/wp-login.php').">
-                        <button type='button' class='btn btn-outline-secondary my-2 my-sm-0' data-container='body' data-toggle='popover' data-placement='bottom' data-content=''>Zaloguj się</button>
-                    </a>";
-            }
-        ?>
-
-        </div>
-               <?php
-                wp_nav_menu( array(
-                    'menu'              => 'Menu Główne',
-                    'theme_location'    => 'primary',
-                    'depth'             => 2,
-                    'container'         => 'div',
-                    'container_class'   => 'collapse navbar-collapse',
-                    'container_id'      => 'navbarNav',
-                    'menu_class'        => 'navbar-nav mr-auto',
-                    'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
-                    'walker'            => new WP_Bootstrap_Navwalker())
-                );
-            ?>   
-                    
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+           <?php
+                   // wp_nav_menu( array(
+                       // 'menu'              => 'Menu Główne',
+                       // 'theme_location'    => 'primary',
+                       // 'depth'             => 2,
+                       // 'container'         => 'div',
+                       // 'container_class'   => 'collapse navbar-collapse',
+                       // 'container_id'      => 'navbarNav',
+                        //'menu_class'        => 'navbar-nav mr-auto',
+                       // 'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
+                       // 'walker'            => new WP_Bootstrap_Navwalker())
+                   // ); 
+           ?>   
+      </div>
     </nav>
 
-</header>
 
 
